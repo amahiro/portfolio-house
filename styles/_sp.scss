@@ -1,0 +1,315 @@
+/******************************************************************
+
+Stylesheet: スマートフォンサイズのモニタで適用
+
+******************************************************************/
+/*-------------------------------
+
+	base
+
+-------------------------------*/
+.inner {
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 100%;
+}
+.heading {
+	font-size: 2.8rem;
+}
+.btn {
+	padding: 12px 0;
+	width: 180px;
+	font-size: 1.4rem;
+}
+.btn-margin {
+	margin: 0 auto;
+}
+/*-------------------------------
+
+	header
+
+-------------------------------*/
+.header {
+	> h1 {
+		margin-left: 15px;
+	}
+	> button {
+		right: 15px;
+	}
+
+}
+/*-------------------------------
+
+	kv
+
+-------------------------------*/
+.swiper-container {
+	&__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		&--en {
+			font-size: 5.2rem;
+		}
+		&--ja {
+			font-size: 1.6rem;
+		}
+	}
+}
+/*-------------------------------
+
+	concept
+
+-------------------------------*/
+.concept {
+	padding: 70px 0 35px;
+	&__body {
+		position: static;
+		padding: 0;
+	}
+	&__thumb {
+		position: relative;
+		width: 100%;
+		height: 250px;
+		z-index: -1;
+	}
+	&__text {
+		padding: 30px 15px 0;
+		text-align: center;
+		margin: 0 auto;
+		max-width: none;
+		width: 95%;
+	}
+	&__heading {
+		margin-bottom: 30px;
+		font-size: 2.4rem;
+		
+	}
+	&__info {
+		text-align: left;
+		margin-bottom: 30px;
+		font-size: 1.4rem;
+	}
+}
+/*-------------------------------
+
+	about
+
+-------------------------------*/
+.about {
+	padding: 35px 0 70px;
+	&__body {
+		position: static;
+		padding: 0;
+	}
+	&__thumb {
+		position: relative;
+		width: 100%;
+		height: 250px;
+		z-index: -1;
+	}
+	&__text {
+		text-align: center;
+		padding: 30px 15px 0;
+		margin: 0 auto;
+		max-width: none;
+		width: 95%;
+	}
+	&__heading {
+		margin-bottom: 30px;
+		font-size: 2.4rem;
+		
+	}
+	&__info {
+		text-align: left;
+		margin-bottom: 30px;
+		font-size: 1.4rem;
+	}
+}
+/*-------------------------------
+
+	works
+
+-------------------------------*/
+.works {
+	padding: 70px 0;
+	> h2 {
+		margin-bottom: 50px;
+	}
+	&__list {
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+	}
+	&__item {
+		margin-bottom: 20px;
+		width: 48%;
+	}
+	&__thumb {
+		&::before {
+			font-size: 1.6rem;
+		}
+	}
+	&__text {
+		&--title {
+			font-size: 1.4rem;
+		}
+		&--lead {
+			font-size: 1.1rem;
+		}
+	}
+}
+/*-------------------------------
+
+	news
+
+-------------------------------*/
+.news {
+	padding: 70px 0;
+	> h2 {
+		margin-bottom: 50px;
+	}
+	&__list {
+		margin-bottom: 10px;
+	}
+	&__item {
+		align-items: stretch;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	&__thumb {
+		width: 100px;
+		height: 100px;
+	}
+	&__text {
+		padding: 0 10px;
+		> time {
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		> h3 {
+			margin-bottom: 5px;
+			font-size: 1.6rem;
+		}
+		> P {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			font-size: 1.2rem;
+			color: #333333;
+		}
+	}
+}
+/*-------------------------------
+
+	contact
+
+-------------------------------*/
+.contact {
+	padding: 70px 0;
+	background: #F8F8F8;
+	> h2 {
+		margin-bottom: 50px;
+	}
+	&__tel {
+		margin-bottom: 30px;
+		font-size: 3rem;
+	}
+	&__text {
+		margin-bottom: 30px;
+		font-size: 1.4rem;
+	}
+	&__table {
+		> tbody {
+			> tr {
+				> th {
+					font-size: 1.4rem;
+				}
+				> td {
+					> ul {
+						flex-direction: column;
+						align-items: flex-start;
+						> li {
+							margin-bottom: 5px;
+							> .radio-label {
+								margin-left: 21px;
+							}
+						}
+					}
+					> textarea {
+						height: 250px;
+					}
+					> .privacy-policy {
+						height: 250px;
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+}
+.form {
+	padding: 30px 15px;
+	&__check {
+		margin-bottom: 30px;
+		font-size: 1.4rem;
+	}
+}
+/*-------------------------------
+
+	footer
+
+-------------------------------*/
+.footer {
+	padding: 40px 0 0;
+	text-align: center;
+	&__top {
+		padding-bottom: 40px;
+	}
+	&__logo {
+		margin: 0 auto 15px;
+		width: 160px;
+	}
+	&__postal-code {
+		font-size: 1.3rem;
+	}
+	&__name {
+		font-size: 1.4rem;
+	}
+	&__detail {
+		font-size: 1.4rem;
+	}
+	&__nav {
+		flex-wrap: wrap;
+		> li {
+			text-align: center;
+			margin-bottom: 30px;
+			width: 50%;
+			&:nth-child(5) {
+				margin-bottom: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			> a {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	&__bottom {
+		text-align: center;
+		height: 30px;
+		> p {
+			line-height: 30px;
+			color: #fff;
+			> small {
+				text-transform: uppercase;
+				> span {
+					text-transform: lowercase;
+				}
+			}
+		}
+	}
+}

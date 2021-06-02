@@ -1,0 +1,219 @@
+/******************************************************************
+
+Stylesheet: タブレットサイズのモニタで適用
+
+******************************************************************/
+/*-------------------------------
+
+	header
+
+-------------------------------*/
+.header {
+	align-items: normal;
+	position: relative;
+	height: 70px;
+	> h1 {
+		margin: auto 0 auto 30px;
+		width: 120px;
+	}
+	> button {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		right: 30px;
+		transform: translateY(-50%);
+		z-index: 9999;
+		> span {
+			display: block;
+			margin-bottom: 5px;
+			background: #707070;
+			width: 36px;
+			height: 2px;
+			transition: all 0.2s;
+			&:nth-child(2) {
+				margin-bottom: 0;
+			}
+		}
+		> p {
+			line-height: 1;
+			font-weight: bold;
+			font-size: 1.2rem;
+			color: #585858;
+		}
+	}
+	> nav {
+		position: absolute;
+		background: #fff;
+		width: 100vw;
+		height: 100vh;
+		transform: translateX(-100%);
+		transition: transform 0.3s;
+		z-index: 100;
+		> ul {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			flex-direction: column;
+			> li {
+				margin: 15px 0;
+				> a {
+					font-size: 2rem;
+				}
+			}
+			> .contact-nav {
+				padding: 0;
+				line-height: normal;
+				background: transparent;
+				height: auto;
+				&:hover {
+					background: transparent;
+					opacity: .6;
+				}
+				> a {
+					color: #222222;
+				}
+			}
+		}
+	}
+}
+.hamburger-open {
+    &.hamburger {
+        & > span {
+            &:nth-child(1) {
+                transform: translateY(4px) rotate(-20deg);
+            }
+            &:nth-child(2) {
+                transform: translateY(-3px) rotate(20deg);
+            }
+        }
+    }
+    + nav {
+        transform: translateX(0);
+    }
+}
+/*-------------------------------
+
+	kv
+
+-------------------------------*/
+.swiper-container {
+	height: calc(100vh - 70px);
+}
+/*-------------------------------
+
+	concept
+
+-------------------------------*/
+.concept {
+	padding: 120px 0 60px;
+	&__text {
+		max-width: 480px;
+	}
+}
+/*-------------------------------
+
+	about
+
+-------------------------------*/
+.about {
+	padding: 60px 0 120px;
+	&__text {
+		max-width: 480px;
+	}
+}
+/*-------------------------------
+
+	works
+
+-------------------------------*/
+.works {
+	padding: 120px 0;
+	> h2 {
+		margin-bottom: 60px;
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+	&__item {
+		width: 48%;
+	}
+}
+/*-------------------------------
+
+	news
+
+-------------------------------*/
+.news {
+	padding: 120px 0;
+	> h2 {
+		margin-bottom: 60px;
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+	&__item {
+		align-items: center;
+
+	}
+	&__thumb {
+		width: 100px;
+		height: 100px;
+	}
+	&__text {
+		> time {
+			margin-bottom: 10px;
+		}
+		> h3 {
+			margin-bottom: 0;
+		}
+		> P {
+			display: none;
+		}
+	}
+}
+/*-------------------------------
+
+	contact
+
+-------------------------------*/
+.contact {
+	padding: 120px 0;
+	&__table {
+		> tbody {
+			> tr {
+				> th {
+					display: block;
+					padding: 0 0 15px;
+					border-bottom: none;
+					width: 100%;
+				}
+				> td {
+					display: block;
+					padding: 0px 0px 15px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+.form {
+	padding: 30px 15px;
+	&__check {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+}
+/*-------------------------------
+
+	footer
+
+-------------------------------*/
+.footer {
+	&__nav {
+		justify-content: space-between;
+		> li {
+			margin-right: 0;
+		}
+	}
+}

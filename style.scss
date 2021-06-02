@@ -1,0 +1,9 @@
+@import "styles/base";
+
+@media (max-width: 1025px) {
+  @import "styles/tab";
+}
+
+@media (max-width: 599px) {
+  @import "styles/sp";
+}
